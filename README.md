@@ -1,4 +1,4 @@
-# Life Expectany
+# Life Expectancy
 
 Estimate how much time one has left to live
 
