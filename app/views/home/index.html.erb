@@ -1,2 +1,52 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h2 class="center text-secondary mt-2">
+<%= link_to 'Life Expectancy', '/' %>
+</h2>
+
+<div class="container main ">
+
+  
+  <div class="text-center">
+  <% if @estimate %>
+    <p class="text-center es mb-3"> With a healthy lifestyle and safty<br> 
+    as a <strong class="strong h5"> <%= @estimate.age%> yo </strong>
+    <strong class="strong h5"> <%= @estimate.gender%> </strong>  
+    we estimate you still have <h4 class="text-info"> <%= @estimate.life_expectancy%> </h4> enjoy Kicking it!</p>
+  <%end%> 
+  </div>
+
+
+
+  <div class='row form'>
+    
+    <div class="form-area"> 
+      <%= form_for(@person, url: :root, method: :get) do |f| %>
+
+        <%= render 'shared/errors', object: f.object %>
+        <div class="form-row">
+          <div class="form-group col">
+            <%= f.label :age%>
+            <%= f.number_field :age, class: 'form-control' %>
+          </div>
+          <div class="form-group col">
+            <%= f.label :gender%>
+            <%= f.select :gender, ["male", "female"], {}, {class: "form-control"} %>
+          </div>
+        </div>
+        <div class="form-group col align-right">
+          <%= f.submit 'Search', class: 'btn btn-outline-info submit px-5'%>
+        </div>
+      <% end %>
+      </div>
+  </div>    
+
+
+  
+  
+</div>
+
+
+
+
+
+
+

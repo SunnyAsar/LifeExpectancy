@@ -1,3 +1,30 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.main {
+  margin-top: 5%;
+  height: 70vh;
+  background-color: white;
+  padding-top: 10%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.form-area {
+  width: 50%;
+  margin: auto;
+}
+
+// .top {
+//   background-color: yellowgreen;
+//   height: 40px;
+//   width: 100%;
+// }
+
+// .form {
+//   background-color: mediumaquamarine;
+//   height: 40px;
+//   width: 100%;
+// }
