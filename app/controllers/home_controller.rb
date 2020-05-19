@@ -5,9 +5,7 @@ class HomeController < ApplicationController
 
 
   def index
-    
-    # byebug
-    # puts parsed_page
+   
   end
 
   def show
